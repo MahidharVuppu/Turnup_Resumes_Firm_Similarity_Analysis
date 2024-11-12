@@ -17,13 +17,14 @@ A notable constraint in this project was that, despite starting with 29,782 resu
 ### Methods:
 
 #### 1. Embedding Creation with Sentence Transformers
-We used Hugging Face’s Sentence Transformers library to create embeddings for each of the 18,311 resumes that were successfully processed. Each resume was converted to a semantic vector representation, capturing the meaning of the text. We then appended JSON objects to each resume line, containing all firms and job titles found within the resume.
+We used Hugging Face’s Sentence Transformers library to create embeddings for each of the 18,311 resumes that were successfully processed. Each resume was converted to a semantic vector representation, capturing the meaning of the text. We then appended JSON objects to each resume line, containing all firms and job titles found within the resume. Example embedding in json: 
+
 
 #### 2. Data Structuring in Pandas
 After embedding creation, we structured the data into a Pandas DataFrame, where each row represented a firm. One column contained the firm name, and the other contained its embedding vector. This structure allowed for efficient processing and setup for similarity analysis.
 
 #### 3. Firm Similarity Analysis Techniques
-We employed various methods to analyze firm similarity based on the resume data, categorized as follows:
+For demonstration purposes, we will compare two specific firms: Family Private Care LLC and Intercontinental Registry. Below are the methods used to determine similarity between these and other firms based on resume data:
 
 - Closest Centroids: We computed a centroid (average embedding) for each firm, treating each firm as a cluster. Firms with centroids closest in 384 dimention vector space were considered similar, implying that their job requirements or culture might align.
 
