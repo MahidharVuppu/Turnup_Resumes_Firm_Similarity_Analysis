@@ -40,3 +40,5 @@ Density-Based Analysis.
 
 ### Results:
 After testing each method, Earth Mover’s Distance (EMD) provided the most accurate similarity results. EMD was particularly effective because it measured the overall ‘cost’ required to align one firm’s embedding distribution with another, making it highly sensitive to minor differences in job roles and skill requirements across firms. This sensitivity enabled EMD to capture nuanced similarities and differences, giving it an edge over simpler measures like centroid distance and pairwise average. From a constrain point of view, EMD was the most accurate similarity results requiring the least computing power, as it was able to directly compare to each firm rather than overal centriods, which could skew the overall results. 
+
+<img width="456" alt="Screenshot 2024-11-12 at 12 00 57 PM" src="https://github.com/user-attachments/assets/f245908b-b53b-4f97-a76b-b76949286e7d">
