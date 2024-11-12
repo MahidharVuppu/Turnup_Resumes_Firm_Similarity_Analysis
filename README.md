@@ -1,5 +1,5 @@
 ## Turnup_Resumes_Firm_Similarity_Analysis: 
-###Abstract:
+### Abstract:
 Developed a firm similarity analysis project utilizing NLP and data analysis on a corpus of resumes to determine similarities between firms. By analyzing resume data, the project identifies and quantifies shared skills, industry focuses, and role requirements across companies, offering insights into firm similarities that can support competitive benchmarking and talent alignment strategies.
 
 ### Business Problem: 
